@@ -22,7 +22,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: my-image-name:$(date +%s)
+        tags: my-image-name:$(date +%Y%m%d%H%M%S)
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
