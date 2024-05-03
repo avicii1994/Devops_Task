@@ -25,7 +25,7 @@ jobs:
         tags: avinashreddy20/my-image-name:${{ github.sha }}
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-        DOCKER_TOKEN: ${{ secrets.DOCKER_TOKEN }}
+        DOCKER_PASSWORD: ${{ secrets.DOCKER_TOKEN }}
       
 
 
